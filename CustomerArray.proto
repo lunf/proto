@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.lunf.proto";
+
+message OuterCustomer {
+    repeated InnerCustomer customers = 1;
+}
+message InnerCustomer {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+}
