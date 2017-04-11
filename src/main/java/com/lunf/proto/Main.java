@@ -98,8 +98,7 @@ public class Main {
         if (!isFile) {
             DataHelper.generateMassiveJsonBuffData(largeJsonFileName);
         }
-
-
+        
         FileInputStream fileInputStream = new FileInputStream(largeJsonFileName);
         long startTime = System.currentTimeMillis();
         // Read Customer from file
